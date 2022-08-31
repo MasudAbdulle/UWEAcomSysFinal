@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" fx:id="superUserView" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="uweacomsys.LoginController">
+   <children>
+      <Button fx:id="managerView" layoutX="254.0" layoutY="106.0" mnemonicParsing="false" onAction="#managerView" text="Manager View" />
+      <Text layoutX="227.0" layoutY="44.0" strokeType="OUTSIDE" strokeWidth="0.0" text="UWE accomodation System" />
+      <Button fx:id="wardenView" layoutX="256.0" layoutY="174.0" mnemonicParsing="false" onAction="#wardenView" text="Warden View" />
+      <Button fx:id="superUser" layoutX="249.0" layoutY="240.0" mnemonicParsing="false" onAction="#SuperView" text="Super User View" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="uweacomsys.SuperuserController">
+   <children>
+      <AnchorPane id="AnchorPane" layoutX="10.0" layoutY="10.0" prefHeight="700.0" prefWidth="1020.0">
+         <children>
+            <Label fx:id="label" layoutX="126" layoutY="120" minHeight="16" minWidth="69" />
+            <TableView fx:id="table1" layoutX="9.0" layoutY="62.0" onMouseClicked="#Selected" onSort="#Selected" prefHeight="400.0" prefWidth="665.0" AnchorPane.leftAnchor="9.0" AnchorPane.rightAnchor="259.0" AnchorPane.topAnchor="62.0">
+               <columns>
+                  <TableColumn fx:id="hallName" prefWidth="129.6000213623047" text="Hall Name" />
+                  <TableColumn fx:id="hallNo" prefWidth="95.20001220703125" text="Hall Number" />
+                  <TableColumn fx:id="roomNO" prefWidth="134.4000244140625" text="Room number" />
+                  <TableColumn fx:id="occupancyStatus" prefWidth="136.0" text="Room Type" />
+                  <TableColumn fx:id="cleaningStatus" prefWidth="133.60000610351562" text="Cleaning Status" />
+               </columns>
+            </TableView>
+            <TextField fx:id="hallNameText" layoutX="126.0" layoutY="511.0" />
+            <TextField fx:id="hallNoText" layoutX="126.0" layoutY="560.0" />
+            <TextField fx:id="roomNoText" layoutX="126.0" layoutY="601.0" />
+            <TextField fx:id="leaseNotext" layoutX="766.0" layoutY="511.0" />
+            <TextField fx:id="occupancyText" layoutX="126.0" layoutY="646.0" />
+            <Button fx:id="updateLeaseButton" layoutX="719.0" layoutY="653.0" mnemonicParsing="false" onAction="#updateLeasePushed" text="update lease" />
+            <Button layoutX="834.0" layoutY="653.0" mnemonicParsing="false" onAction="#deleteLease" text="delete lease" />
+            <TextField fx:id="cleaningStatusText" layoutX="427.0" layoutY="511.0" />
+            <Text layoutX="807.0" layoutY="483.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Create Lease" />
+            <TextField fx:id="leaseDurationText" layoutX="766.0" layoutY="560.0" />
+            <TextField fx:id="studentNameText" layoutX="766.0" layoutY="614.0" />
+            <Text layoutX="665.0" layoutY="528.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Lease Number" />
+            <Text layoutX="664.0" layoutY="577.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Lease Duration" />
+            <Text layoutX="665.0" layoutY="626.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Student Name" />
+            <Text layoutX="9.0" layoutY="528.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Hall Name" />
+            <Text layoutX="9.0" layoutY="577.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Hall Number" />
+            <Text layoutX="3.0" layoutY="618.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Room Number" />
+            <Text layoutX="312.0" layoutY="529.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cleaning Status" />
+            <Text layoutX="301.0" layoutY="564.0" strokeType="OUTSIDE" strokeWidth="0.0" />
+            <Text layoutX="9.0" layoutY="663.0" strokeType="OUTSIDE" strokeWidth="0.0" text="OccupancyStatus" />
+            <Text layoutX="9.0" layoutY="483.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Room info" />
+            <Label fx:id="leaseNoError" layoutX="752.0" layoutY="537.0" />
+            <Button fx:id="updateCleaning" layoutX="526.0" layoutY="653.0" mnemonicParsing="false" onAction="#updatecleaningStatus" text="update cleaning" />
+            <Button fx:id="deleteCleaningButton" layoutX="394.0" layoutY="653.0" mnemonicParsing="false" onAction="#deleteCleaningStatus" text="delete cleaning" />
+            <Label layoutX="9.0" layoutY="26.0" text="All User View">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
