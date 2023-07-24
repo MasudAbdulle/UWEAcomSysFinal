@@ -31,9 +31,6 @@ In each view, the user can interact with the dynamic table to change the price, 
 Contribution
 This project was completed as part of my coursework for university. It showcases my skills and knowledge in Java development, JavaFX, and Scene Builder. As a solo developer for this coursework, I was responsible for conceptualizing, designing, and implementing the Accommodation System.
 
-License
-This Accommodation System is licensed under the MIT License, which allows you to use, modify, and distribute the code freely.
-
 Contact
 If you have any questions or need further information about this project, please feel free to contact me at masudabdulle33@gmail.com 
 
